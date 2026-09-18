@@ -1,0 +1,398 @@
+/* =========================================
+   NOTICE SECTION
+========================================= */
+
+.notice-section {
+    padding: 100px 20px;
+    background: #f7f9f8;
+}
+
+.notice-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* SECTION HEADING */
+
+.notice-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.notice-subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0b5d3b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.notice-heading h2 {
+    margin: 0;
+    color: #12372a;
+    font-family: "Playfair Display", serif;
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.notice-heading h2 span {
+    color: #0b5d3b;
+}
+
+.notice-heading > p {
+    max-width: 440px;
+    margin: 0;
+    color: #68746f;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* MAIN GRID */
+
+.notice-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+
+/* NOTICE LIST */
+
+.notice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* NOTICE CARD */
+
+.notice-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e8eeeb;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.notice-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(11, 93, 59, 0.08);
+    border-color: #d5e3dc;
+}
+
+
+/* DATE */
+
+.notice-date {
+    flex-shrink: 0;
+    width: 68px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #0b5d3b;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.notice-date strong {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.notice-date span {
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* NOTICE CONTENT */
+
+.notice-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.notice-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 7px;
+}
+
+.notice-meta span {
+    color: #0b5d3b;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.notice-meta small {
+    color: #8a9590;
+    font-size: 11px;
+}
+
+.notice-meta small i {
+    margin-right: 5px;
+}
+
+.notice-content h3 {
+    margin: 0 0 7px;
+    color: #17392c;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.notice-content p {
+    margin: 0;
+    color: #74807b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ARROW */
+
+.notice-arrow {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dfe8e3;
+    border-radius: 50%;
+    color: #0b5d3b;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.notice-arrow:hover {
+    background: #0b5d3b;
+    color: #ffffff;
+}
+
+
+/* VIEW ALL */
+
+.notice-view-all {
+    margin-top: 20px;
+}
+
+.notice-view-all a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #0b5d3b;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.notice-view-all a i {
+    transition: 0.3s ease;
+}
+
+.notice-view-all a:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   NOTICE SIDEBAR
+========================================= */
+
+.notice-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* IMPORTANT NOTICE */
+
+.important-notice {
+    padding: 30px;
+    background: #0b5d3b;
+    border-radius: 14px;
+    color: #ffffff;
+}
+
+.important-notice > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.important-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.important-notice span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    opacity: 0.7;
+}
+
+.important-notice h3 {
+    margin: 3px 0 0;
+    font-size: 18px;
+}
+
+.important-notice p {
+    margin: 22px 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.important-notice a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.important-notice a i {
+    transition: 0.3s ease;
+}
+
+.important-notice a:hover i {
+    transform: translateX(5px);
+}
+
+
+/* QUICK LINKS */
+
+.notice-quick {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e8eeeb;
+    border-radius: 14px;
+}
+
+.notice-quick h3 {
+    margin: 0 0 15px;
+    color: #17392c;
+    font-size: 18px;
+}
+
+.notice-quick a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-top: 1px solid #edf1ef;
+    color: #4d5d56;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.notice-quick a span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notice-quick a span i {
+    color: #0b5d3b;
+}
+
+.notice-quick a > i {
+    color: #a0aaa5;
+    font-size: 10px;
+}
+
+.notice-quick a:hover {
+    color: #0b5d3b;
+}
+
+
+/* =========================================
+   NOTICE RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .notice-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .notice-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .notice-section {
+        padding: 70px 15px;
+    }
+
+    .notice-heading h2 {
+        font-size: 36px;
+    }
+
+    .notice-card {
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+    .notice-date {
+        width: 58px;
+        height: 62px;
+    }
+
+    .notice-date strong {
+        font-size: 21px;
+    }
+
+    .notice-content h3 {
+        font-size: 15px;
+    }
+
+    .notice-content p {
+        display: none;
+    }
+
+    .notice-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+    }
+
+    .notice-arrow {
+        width: 36px;
+        height: 36px;
+    }
+
+}

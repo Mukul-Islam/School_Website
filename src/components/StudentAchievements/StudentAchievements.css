@@ -1,0 +1,31 @@
+.student-achievements-section {
+    padding: 100px 30px;
+    background: #ffffff;
+}
+
+.student-achievements-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+    .student-achievements-section {
+        padding: 80px 25px;
+    }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+    .student-achievements-section {
+        padding: 65px 18px;
+    }
+}

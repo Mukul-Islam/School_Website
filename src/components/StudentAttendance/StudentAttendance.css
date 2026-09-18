@@ -1,0 +1,166 @@
+.student-attendance-page {
+  min-height: calc(100vh - 76px);
+  background: #f5f8f6;
+  padding: 45px 20px 70px;
+}
+
+.student-attendance-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.attendance-header {
+  margin-bottom: 30px;
+}
+
+.attendance-header span {
+  color: #d9a441;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.attendance-header h1 {
+  margin: 8px 0 5px;
+  color: #063d27;
+  font-size: 34px;
+}
+
+.attendance-header p {
+  margin: 0;
+  color: #667085;
+}
+
+.attendance-overview {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.attendance-main-card,
+.attendance-stat-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.attendance-main-card span,
+.attendance-stat-card span {
+  display: block;
+  color: #667085;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.attendance-main-card strong {
+  display: block;
+  color: #0b5d3b;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.attendance-stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attendance-stat-card strong {
+  color: #063d27;
+  font-size: 25px;
+}
+
+.attendance-progress {
+  height: 9px;
+  background: #e8ece9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.attendance-progress div {
+  height: 100%;
+  background: #0b5d3b;
+  border-radius: 20px;
+}
+
+.attendance-main-card p {
+  margin: 12px 0 0;
+  color: #667085;
+  font-size: 12px;
+}
+
+.attendance-record-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.attendance-card-title {
+  margin-bottom: 22px;
+}
+
+.attendance-card-title h2 {
+  margin: 0;
+  color: #063d27;
+  font-size: 20px;
+}
+
+.attendance-summary-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.attendance-summary-row div {
+  background: #f7faf8;
+  border: 1px solid #e5e7eb;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.attendance-summary-row span {
+  display: block;
+  color: #667085;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.attendance-summary-row strong {
+  color: #0b5d3b;
+  font-size: 22px;
+}
+
+@media (max-width: 1000px) {
+  .attendance-overview {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .attendance-main-card {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 550px) {
+  .student-attendance-page {
+    padding: 30px 15px 50px;
+  }
+
+  .attendance-header h1 {
+    font-size: 28px;
+  }
+
+  .attendance-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-main-card {
+    grid-column: auto;
+  }
+
+  .attendance-summary-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}

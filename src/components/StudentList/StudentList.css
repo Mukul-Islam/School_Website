@@ -1,0 +1,108 @@
+.student-list-section {
+  min-height: 70vh;
+  padding: 80px 20px;
+  background: #f5f8f6;
+}
+
+.student-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-list-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.student-list-header span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #d9a441;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.student-list-header h1 {
+  margin: 0 0 15px;
+  color: #0b5d3b;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.student-list-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #667085;
+  line-height: 1.7;
+}
+
+.student-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.student-table th {
+  padding: 17px 20px;
+  background: #0b5d3b;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.student-table td {
+  padding: 17px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1d2939;
+  font-size: 15px;
+}
+
+.student-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.student-table tbody tr:hover {
+  background: #f5f8f6;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #0b5d3b !important;
+}
+
+.student-status {
+  text-align: center;
+  color: #667085;
+  padding: 30px;
+}
+
+.student-error {
+  text-align: center;
+  color: #b42318;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .student-list-section {
+    padding: 60px 15px;
+  }
+
+  .student-list-header h1 {
+    font-size: 32px;
+  }
+
+  .student-table th,
+  .student-table td {
+    padding: 14px 15px;
+  }
+}

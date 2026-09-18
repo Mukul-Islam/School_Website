@@ -1,0 +1,31 @@
+.examination-section {
+    padding: 100px 30px;
+    background: #ffffff;
+}
+
+.examination-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+    .examination-section {
+        padding: 80px 25px;
+    }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+    .examination-section {
+        padding: 65px 18px;
+    }
+}

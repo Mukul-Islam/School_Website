@@ -1,0 +1,200 @@
+.student-id-page {
+  min-height: calc(100vh - 76px);
+  background: #f5f8f6;
+  padding: 45px 20px 70px;
+}
+
+.student-id-container {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.id-page-header {
+  margin-bottom: 30px;
+}
+
+.id-page-header span {
+  color: #d9a441;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.id-page-header h1 {
+  margin: 8px 0 5px;
+  color: #063d27;
+  font-size: 34px;
+}
+
+.id-page-header p {
+  margin: 0;
+  color: #667085;
+}
+
+.student-id-card {
+  width: min(680px, 100%);
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe5e1;
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 35px rgba(6, 61, 39, 0.08);
+}
+
+.id-card-header {
+  background: #063d27;
+  color: #ffffff;
+
+  padding: 22px 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.id-school-logo {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #0b5d3b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.id-card-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.id-card-header p {
+  margin: 5px 0 0;
+  color: #d9a441;
+  font-size: 12px;
+}
+
+.id-card-body {
+  display: flex;
+  gap: 28px;
+  padding: 30px;
+}
+
+.id-photo {
+  width: 135px;
+  height: 160px;
+
+  flex-shrink: 0;
+
+  border: 4px solid #d9a441;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f8f6;
+}
+
+.id-photo span {
+  color: #0b5d3b;
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.id-student-info {
+  flex: 1;
+}
+
+.id-student-info h3 {
+  margin: 0 0 15px;
+
+  color: #063d27;
+  font-size: 24px;
+}
+
+.id-info-row {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 9px 0;
+
+  border-bottom: 1px solid #eef1ef;
+}
+
+.id-info-row span {
+  color: #667085;
+  font-size: 13px;
+}
+
+.id-info-row strong {
+  color: #1d2939;
+  font-size: 13px;
+}
+
+.id-card-footer {
+  display: flex;
+  justify-content: space-between;
+
+  background: #f5f8f6;
+
+  border-top: 1px solid #e5e7eb;
+
+  padding: 18px 30px;
+}
+
+.id-card-footer span {
+  display: block;
+  color: #667085;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.id-card-footer strong {
+  color: #0b5d3b;
+  font-size: 14px;
+}
+
+.id-card-note {
+  text-align: center;
+  color: #667085;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .student-id-page {
+    padding: 30px 15px 50px;
+  }
+
+  .id-page-header h1 {
+    font-size: 28px;
+  }
+
+  .id-card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .id-student-info {
+    width: 100%;
+  }
+
+  .id-student-info h3 {
+    text-align: center;
+  }
+
+  .id-card-footer {
+    gap: 20px;
+  }
+}

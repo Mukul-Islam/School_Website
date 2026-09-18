@@ -1,0 +1,31 @@
+.administration-section {
+    padding: 100px 30px;
+    background: #ffffff;
+}
+
+.administration-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+    .administration-section {
+        padding: 80px 25px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .administration-section {
+        padding: 65px 18px;
+    }
+}

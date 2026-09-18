@@ -1,0 +1,407 @@
+.about-school-section {
+    padding: 100px 30px;
+    background:
+        radial-gradient(circle at top right, rgba(217, 164, 65, 0.08), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(11, 93, 59, 0.07), transparent 30%),
+        #f7faf8;
+}
+
+.about-school-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.about-school-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.about-school-header span,
+.about-school-label,
+.approach-heading span,
+.about-school-commitment span {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.about-school-header h1 {
+    font-family: "Playfair Display", serif;
+    color: var(--text);
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.about-school-header h1 strong {
+    color: var(--primary);
+}
+
+.about-school-header p {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.about-school-introduction {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: 65px;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+.about-school-content {
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 18px;
+    border: 1px solid rgba(11, 93, 59, 0.08);
+    box-shadow: 0 15px 40px rgba(6, 61, 39, 0.06);
+}
+
+.about-school-content h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--text);
+    font-size: 36px;
+    margin-bottom: 22px;
+}
+
+.about-school-content p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.about-school-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   HIGHLIGHT CARD
+========================= */
+
+.about-school-highlight {
+    background:
+        linear-gradient(145deg, #0b5d3b, #063d27);
+    color: var(--white);
+    padding: 50px 40px;
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(6, 61, 39, 0.18);
+}
+
+.about-school-highlight::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgba(217, 164, 65, 0.25);
+    border-radius: 50%;
+    right: -90px;
+    top: -90px;
+}
+
+.about-school-highlight::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    left: -90px;
+    bottom: -90px;
+}
+
+.highlight-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary);
+    color: var(--primary-dark);
+    border-radius: 14px;
+    font-size: 25px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-school-highlight h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 29px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-school-highlight p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.8;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   OUR APPROACH
+========================= */
+
+.about-school-approach {
+    margin-bottom: 100px;
+}
+
+.approach-heading {
+    max-width: 720px;
+    margin-bottom: 45px;
+}
+
+.approach-heading h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--text);
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.approach-heading p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.approach-card {
+    padding: 35px 30px;
+    border: 1px solid rgba(11, 93, 59, 0.10);
+    border-radius: 18px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.approach-card::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: var(--secondary);
+    top: 0;
+    left: 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.approach-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(6, 61, 39, 0.10);
+    border-color: rgba(11, 93, 59, 0.20);
+}
+
+.approach-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11, 93, 59, 0.08);
+    color: var(--primary);
+    border-radius: 12px;
+    font-size: 21px;
+    margin-bottom: 22px;
+    margin-top: 5px;
+}
+
+.approach-card h3 {
+    color: var(--text);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.approach-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   COMMITMENT
+========================= */
+
+.about-school-commitment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 50px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(11, 93, 59, 0.08),
+            rgba(217, 164, 65, 0.10)
+        );
+    border: 1px solid rgba(11, 93, 59, 0.08);
+    border-left: 5px solid var(--secondary);
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-school-commitment::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid rgba(11, 93, 59, 0.08);
+    border-radius: 50%;
+    right: -80px;
+    bottom: -80px;
+}
+
+.about-school-commitment h2 {
+    font-family: "Playfair Display", serif;
+    color: var(--text);
+    font-size: 31px;
+    line-height: 1.35;
+}
+
+.about-school-commitment p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-school-section {
+        padding: 80px 25px;
+    }
+
+    .about-school-header {
+        margin-bottom: 60px;
+    }
+
+    .about-school-header h1 {
+        font-size: 42px;
+    }
+
+    .about-school-introduction {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .about-school-content {
+        padding: 40px;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-school-commitment {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .about-school-section {
+        padding: 65px 18px;
+    }
+
+    .about-school-header {
+        margin-bottom: 50px;
+    }
+
+    .about-school-header h1 {
+        font-size: 33px;
+    }
+
+    .about-school-header p {
+        font-size: 14px;
+    }
+
+    .about-school-content {
+        padding: 30px 25px;
+    }
+
+    .about-school-content h2 {
+        font-size: 29px;
+    }
+
+    .about-school-content p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .about-school-highlight {
+        padding: 38px 25px;
+    }
+
+    .about-school-highlight h3 {
+        font-size: 25px;
+    }
+
+    .about-school-highlight p {
+        font-size: 14px;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-heading h2 {
+        font-size: 30px;
+    }
+
+    .approach-card {
+        padding: 32px 25px;
+    }
+
+    .about-school-commitment {
+        padding: 32px 25px;
+    }
+
+    .about-school-commitment h2 {
+        font-size: 26px;
+    }
+
+    .about-school-commitment p {
+        font-size: 14px;
+    }
+}

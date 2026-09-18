@@ -1,0 +1,361 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background: var(--primary-dark);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================================
+   FOOTER MAIN
+========================================= */
+
+.footer-main {
+    padding: 75px 30px 60px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1.2fr;
+    gap: 55px;
+}
+
+
+/* =========================================
+   FOOTER BRAND
+========================================= */
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 22px;
+}
+
+.footer-brand img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--secondary);
+    padding: 4px;
+}
+
+.footer-brand h2 {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.footer-brand span {
+    display: block;
+    margin-top: 4px;
+    color: var(--secondary);
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   FOOTER ABOUT
+========================================= */
+
+.footer-about > p {
+    max-width: 390px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   FOOTER SOCIAL
+========================================= */
+
+.footer-social {
+    display: flex;
+    gap: 9px;
+    margin-top: 23px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER HEADINGS
+========================================= */
+
+.footer-column h3 {
+    position: relative;
+
+    margin: 3px 0 23px;
+    padding-bottom: 12px;
+
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+}
+
+.footer-column h3::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 35px;
+    height: 2px;
+
+    background: var(--secondary);
+}
+
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+
+    transition: 0.25s ease;
+}
+
+.footer-links a i {
+    color: var(--secondary);
+    font-size: 9px;
+    transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.footer-links a:hover i {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.footer-contact {
+    padding-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 19px;
+}
+
+.contact-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.07);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--secondary);
+    font-size: 13px;
+}
+
+.contact-item span {
+    display: block;
+    margin-bottom: 3px;
+
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.contact-item p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    transition: 0.25s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: var(--secondary);
+}
+
+.footer-bottom-links span {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 10px;
+}
+
+
+/* =========================================
+   FOOTER RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-contact {
+        grid-column: span 3;
+        padding-left: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .footer-contact h3 {
+        grid-column: span 3;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .footer-main {
+        padding: 60px 25px 45px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 30px;
+    }
+
+    .footer-about {
+        grid-column: span 2;
+    }
+
+    .footer-contact {
+        grid-column: span 2;
+
+        display: block;
+    }
+
+    .footer-contact h3 {
+        grid-column: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-main {
+        padding: 50px 20px 35px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+
+    .footer-contact {
+        grid-column: auto;
+    }
+
+    .footer-brand h2 {
+        font-size: 17px;
+    }
+
+    .footer-bottom-inner {
+        padding: 18px 20px;
+
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+    }
+}
