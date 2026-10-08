@@ -4,28 +4,41 @@ import PublicLayout from "../layouts/PublicLayout";
 import StudentPortalLayout from "../layouts/StudentPortalLayout";
 
 import Hero from "../components/Hero/Hero";
+
 import Notice from "../components/Notice/Notice";
+import Notices from "../components/Notice/Notices";
+import Home_Notice from "../components/Notice/Home_Notice";
+
 import About from "../components/About/About";
 import Achievements from "../components/Achievements/Achievements";
+
 import Contact from "../components/Contact/Contact";
 import Teachers from "../components/Teachers/Teachers";
+
 import History from "../components/History/History";
 import Founder from "../components/Founder/Founder";
 import Administration from "../components/Administration/Administration";
+
 import AboutSchool from "../components/AboutSchool/AboutSchool";
 import MissionVision from "../components/MissionVision/MissionVision";
+
 import HeadTeacher from "../components/HeadTeacher/HeadTeacher";
 import ManagingCommittee from "../components/ManagingCommittee/ManagingCommittee";
+
 import StudentList from "../components/StudentList/StudentList";
 import StudentAchievements from "../components/StudentAchievements/StudentAchievements";
 import StudentServices from "../components/StudentServices/StudentServices";
+
 import AcademicPrograms from "../components/AcademicPrograms/AcademicPrograms";
 import AcademicCalendar from "../components/AcademicCalendar/AcademicCalendar";
 import Examination from "../components/Examination/Examination";
 import Results from "../components/Results/Results";
+
 import Events from "../components/Events/Events";
+
 import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
 import VideoGallery from "../components/VideoGallery/VideoGallery";
+
 import Alumni from "../components/Alumni/Alumni";
 import Admission from "../components/Admission/Admission";
 
@@ -42,8 +55,11 @@ function Home() {
   return (
     <>
       <Hero />
-      <Notice />
+
+      <Home_Notice />
+
       <About />
+
       <Achievements />
     </>
   );
@@ -61,7 +77,10 @@ function AppRouter() {
       <Route element={<PublicLayout />}>
 
         {/* HOME */}
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
         {/* ABOUT SCHOOL */}
         <Route
@@ -143,9 +162,19 @@ function AppRouter() {
           element={<Results />}
         />
 
-        {/* NOTICE */}
+        {/* =====================================
+            NOTICE
+        ===================================== */}
+
+        {/* All Notices */}
         <Route
           path="/notice"
+          element={<Notices />}
+        />
+
+        {/* Single Notice */}
+        <Route
+          path="/notice/:id"
           element={<Notice />}
         />
 
@@ -220,20 +249,20 @@ function AppRouter() {
           element={<StudentResult />}
         />
 
-          <Route
-    path="/student-payment"
-    element={<StudentPayment />}
-  />
+        <Route
+          path="/student-payment"
+          element={<StudentPayment />}
+        />
 
-  <Route
-    path="/student-attendance"
-    element={<StudentAttendance />}
-  />
+        <Route
+          path="/student-attendance"
+          element={<StudentAttendance />}
+        />
 
-  <Route
-    path="/student-id-card"
-    element={<StudentIdCard />}
-  />
+        <Route
+          path="/student-id-card"
+          element={<StudentIdCard />}
+        />
 
       </Route>
 

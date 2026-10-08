@@ -1,80 +1,144 @@
+import { Link, useParams } from "react-router-dom";
+
+import {
+  FaArrowLeft,
+  FaBullhorn,
+} from "react-icons/fa";
+
+import notices from "./NoticeData";
+
+
 function Notice() {
-  const notices = [];
 
-  return (
-    <section className="notice-section">
-      <div className="notice-container">
+  const { id } = useParams();
 
-        {/* Header */}
-        <div className="notice-header">
-          <div className="notice-heading">
-            <div className="notice-icon">
-              <i className="fa-solid fa-bullhorn"></i>
+  const notice = notices.find(
+    (item) => item.id === Number(id)
+  );
+
+
+  // Notice not found
+  if (!notice) {
+
+    return (
+      <section className="notice-section">
+
+        <div className="notice-container">
+
+          <Link
+            to="/notice"
+            className="notice-back-btn"
+          >
+            <FaArrowLeft />
+            Back to All Notices
+          </Link>
+
+
+          <div className="no-notice">
+
+            <div className="no-notice-icon">
+              <FaBullhorn />
             </div>
 
             <div>
-              <span>LATEST NOTICE</span>
-              <h2>School Notice Board</h2>
+
+              <h3>
+                Notice Not Found
+              </h3>
+
+              <p>
+                The notice you are looking for does not exist.
+              </p>
+
             </div>
+
           </div>
 
-          <a href="#" className="notice-all-btn">
-            View All Notices
-            <i className="fa-solid fa-arrow-right"></i>
-          </a>
         </div>
 
-        {/* Notice List */}
-        <div className="notice-list">
+      </section>
+    );
+  }
 
-          {notices.length === 0 ? (
-            <div className="no-notice">
-              <div className="no-notice-icon">
-                <i className="fa-regular fa-bell"></i>
-              </div>
 
-              <div>
-                <h3>No Notices Available</h3>
-                <p>
-                  There are currently no new notices from the school.
-                </p>
-              </div>
+  return (
+    <section className="notice-section">
+
+      <div className="notice-container">
+
+        {/* Back Button */}
+        <Link
+          to="/notice"
+          className="notice-back-btn"
+        >
+          <FaArrowLeft />
+          Back to All Notices
+        </Link>
+
+
+        {/* Single Notice */}
+        <div className="single-notice">
+
+          <div className="single-notice-header">
+
+            <div className="notice-icon">
+              <FaBullhorn />
             </div>
-          ) : (
-            notices.map((notice) => (
-              <a
-                href="#"
-                className="notice-item"
-                key={notice.id}
-              >
-                <div className="notice-date">
-                  <strong>{notice.date}</strong>
-                  <span>{notice.month}</span>
-                  <small>{notice.year}</small>
-                </div>
 
-                <div className="notice-content">
-                  <div className="notice-title">
-                    <h3>{notice.title}</h3>
+            <div>
 
-                    {notice.new && (
-                      <span className="new-badge">NEW</span>
-                    )}
-                  </div>
+              <span>
+                ABC SCHOOL NOTICE
+              </span>
 
-                  <p>{notice.description}</p>
-                </div>
+              <h1>
+                {notice.title}
+              </h1>
 
-                <div className="notice-arrow">
-                  <i className="fa-solid fa-arrow-right"></i>
-                </div>
-              </a>
-            ))
+            </div>
+
+          </div>
+
+
+          {/* Date */}
+          <div className="single-notice-date">
+
+            <strong>
+              {notice.date}
+            </strong>
+
+            <span>
+              {notice.month}
+            </span>
+
+            <small>
+              {notice.year}
+            </small>
+
+          </div>
+
+
+          {/* New Badge */}
+          {notice.new && (
+            <span className="new-badge">
+              NEW
+            </span>
           )}
+
+
+          {/* Description */}
+          <div className="single-notice-content">
+
+            <p>
+              {notice.description}
+            </p>
+
+          </div>
 
         </div>
 
       </div>
+
     </section>
   );
 }
