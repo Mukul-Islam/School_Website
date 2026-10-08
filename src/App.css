@@ -1,6 +1,7 @@
 /* =========================================
    GLOBAL
 ========================================= */
+@import "tailwindcss";
 html,
 body,
 #root {
@@ -87,6 +88,15 @@ ul {
     color: var(--secondary);
 }
 
+@keyframes notice-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .social-links {
     display: flex;
     gap: 10px;

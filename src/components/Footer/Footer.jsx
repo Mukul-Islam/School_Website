@@ -16,7 +16,7 @@ function Footer() {
 
             <div className="footer-brand">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/School.svg/512px-School.svg.png"
+                src="src\images\ABC_School.png"
                 alt="ABC School"
               />
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,9 +30,7 @@ function Navbar() {
   }, [mobileMenuOpen]);
 
   const toggleDropdown = (name) => {
-    setOpenDropdown((current) =>
-      current === name ? null : name
-    );
+    setOpenDropdown((current) => (current === name ? null : name));
   };
 
   const closeMobileMenu = () => {
@@ -140,9 +139,7 @@ function Navbar() {
 
       <div className="top-bar">
         <div className="top-bar-inner">
-
           <div className="top-left">
-
             <div className="top-item">
               <i className="fa-solid fa-phone"></i>
               <span>+880 1XXX-XXXXXX</span>
@@ -152,340 +149,252 @@ function Navbar() {
               <i className="fa-solid fa-envelope"></i>
               <span>info@school.edu.bd</span>
             </div>
+          </div>
+          {/* Notice */}
+          <div className="flex-1 min-w-0 flex items-center justify-center mx-6">
+            <div className="flex items-center gap-2 bg-white/10 px-4 py-1 rounded-full overflow-hidden max-w-[500px]">
+              <span className="font-semibold whitespace-nowrap text-xs">
+                📢 Notice
+              </span>
 
+              <div className="overflow-hidden whitespace-nowrap flex-1">
+                <span className="inline-block animate-[notice-scroll_15s_linear_infinite]">
+                  Admission is now open for the 2026 academic session. Please
+                  contact the school office for details.
+                </span>
+              </div>
+            </div>
           </div>
 
           <div className="top-right">
-
             <span>Follow Us</span>
 
             <div className="social-links">
-
-              <a href="#" aria-label="Facebook">
-                <i className="fa-brands fa-facebook-f"></i>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
               </a>
 
-              <a href="#" aria-label="YouTube">
-                <i className="fa-brands fa-youtube"></i>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <FaYoutube />
               </a>
 
-              <a href="#" aria-label="Instagram">
-                <i className="fa-brands fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
               </a>
-
             </div>
-
           </div>
-
         </div>
       </div>
-
 
       {/* MAIN HEADER */}
 
       <header className="main-header">
-
         <div className="header-inner">
-
           {/* BRAND */}
 
-          <Link to="/" className="brand">
+          <Link
+  to="/"
+  className="flex items-center gap-3 shrink-0 whitespace-nowrap"
+>
+  {/* Logo */}
+  <div className="w-14 h-14 rounded-full overflow-hidden shrink-0">
+    <img
+      src="/src/images/ABC_School.png"
+      alt="ABC School Logo"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-            <img
-              className="logo"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/School.svg/512px-School.svg.png"
-              alt="ABC School Logo"
-            />
+  {/* School Info */}
+  <div className="flex flex-col">
+    <h1 className="m-0 text-xl font-bold leading-tight text-[var(--primary)]">
+      ABC School
+    </h1>
 
-            <div className="brand-text">
-
-              <h1>ABC School</h1>
-
-              <span>
-                Knowledge • Character • Excellence
-              </span>
-
-            </div>
-
-          </Link>
-
+    <span className="mt-1 text-[10px] tracking-[0.7px] uppercase text-[var(--muted)]">
+      Knowledge • Character • Excellence
+    </span>
+  </div>
+</Link>
 
           {/* DESKTOP NAV */}
 
           <nav className="desktop-nav">
-
             {/* HOME */}
 
             <div className="nav-item">
-
-              <Link
-                to="/"
-                className="nav-link active"
-              >
+              <Link to="/" className="nav-link active">
                 Home
               </Link>
-
             </div>
-
 
             {/* ABOUT SCHOOL */}
 
             <div className="nav-item">
-
-              <Link
-                to="/about-school"
-                className="nav-link"
-              >
+              <Link to="/about-school" className="nav-link">
                 About School
-
                 <i className="fa-solid fa-chevron-down"></i>
               </Link>
 
               <div className="dropdown">
-
                 {aboutItems.map((item) => (
-                  <Link
-                    to={item.path}
-                    key={item.title}
-                  >
+                  <Link to={item.path} key={item.title}>
                     <i className={`fa-solid ${item.icon}`}></i>
                     {item.title}
                   </Link>
                 ))}
-
               </div>
-
             </div>
-
 
             {/* ADMINISTRATION */}
 
             <div className="nav-item">
-
-              <Link
-                to="/administration"
-                className="nav-link"
-              >
+              <Link to="/administration" className="nav-link">
                 Administration
-
                 <i className="fa-solid fa-chevron-down"></i>
               </Link>
 
               <div className="dropdown">
-
                 {administrationItems.map((item) => (
-                  <Link
-                    to={item.path}
-                    key={item.title}
-                  >
+                  <Link to={item.path} key={item.title}>
                     <i className={`fa-solid ${item.icon}`}></i>
                     {item.title}
                   </Link>
                 ))}
-
               </div>
-
             </div>
-
 
             {/* TEACHERS */}
 
             <div className="nav-item">
-
-              <Link
-                to="/teachers"
-                className="nav-link"
-              >
+              <Link to="/teachers" className="nav-link">
                 Teachers
               </Link>
-
             </div>
-
 
             {/* STUDENTS */}
 
             <div className="nav-item">
-
-              <Link
-                to="/student-list"
-                className="nav-link"
-              >
+              <Link to="/student-list" className="nav-link">
                 Students
-
                 <i className="fa-solid fa-chevron-down"></i>
               </Link>
 
               <div className="dropdown">
-
                 {studentItems.map((item) => (
-                  <Link
-                    to={item.path}
-                    key={item.title}
-                  >
+                  <Link to={item.path} key={item.title}>
                     <i className={`fa-solid ${item.icon}`}></i>
                     {item.title}
                   </Link>
                 ))}
-
               </div>
-
             </div>
-
 
             {/* ACADEMIC */}
 
             <div className="nav-item">
-
-              <Link
-                to="/academic-programs"
-                className="nav-link"
-              >
+              <Link to="/academic-programs" className="nav-link">
                 Academic
-
                 <i className="fa-solid fa-chevron-down"></i>
               </Link>
 
               <div className="dropdown">
-
                 {academicItems.map((item) => (
-                  <Link
-                    to={item.path}
-                    key={item.title}
-                  >
+                  <Link to={item.path} key={item.title}>
                     <i className={`fa-solid ${item.icon}`}></i>
                     {item.title}
                   </Link>
                 ))}
-
               </div>
-
             </div>
-
 
             {/* NOTICE */}
 
             <div className="nav-item">
-
-              <Link
-                to="/notice"
-                className="nav-link"
-              >
+              <Link to="/notice" className="nav-link">
                 Notice
               </Link>
-
             </div>
-
 
             {/* EVENTS */}
 
             <div className="nav-item">
-
-              <Link
-                to="/events"
-                className="nav-link"
-              >
+              <Link to="/events" className="nav-link">
                 Events
               </Link>
-
             </div>
-
 
             {/* GALLERY */}
 
             <div className="nav-item">
-
-              <Link
-                to="/photo-gallery"
-                className="nav-link"
-              >
+              <Link to="/photo-gallery" className="nav-link">
                 Gallery
-
                 <i className="fa-solid fa-chevron-down"></i>
               </Link>
 
               <div className="dropdown">
-
                 {galleryItems.map((item) => (
-                  <Link
-                    to={item.path}
-                    key={item.title}
-                  >
+                  <Link to={item.path} key={item.title}>
                     <i className={`fa-solid ${item.icon}`}></i>
                     {item.title}
                   </Link>
                 ))}
-
               </div>
-
             </div>
-
 
             {/* ACHIEVEMENTS */}
 
             <div className="nav-item">
-
-              <Link
-                to="/achievements"
-                className="nav-link"
-              >
+              <Link to="/achievements" className="nav-link">
                 Achievements
               </Link>
-
             </div>
-
 
             {/* ALUMNI */}
 
             <div className="nav-item">
-
-              <Link
-                to="/alumni"
-                className="nav-link"
-              >
+              <Link to="/alumni" className="nav-link">
                 Alumni
               </Link>
-
             </div>
-
 
             {/* CONTACT */}
 
             <div className="nav-item">
-
-              <Link
-                to="/contact"
-                className="nav-link"
-              >
+              <Link to="/contact" className="nav-link">
                 Contact
               </Link>
-
             </div>
-
           </nav>
 
-
-                    {/* STUDENT LOGIN + ADMISSION BUTTON */}
+          {/* STUDENT LOGIN + ADMISSION BUTTON */}
 
           <div className="header-cta">
-
-            <Link
-              to="/student-login"
-              className="cta-btn-outline"
-            >
+            <Link to="/student-login" className="cta-btn-outline">
               <i className="fa-solid fa-right-to-bracket"></i>
               Student Login
             </Link>
 
-            <Link
-              to="/admission"
-              className="cta-btn"
-            >
+            <Link to="/admission" className="cta-btn">
               <i className="fa-solid fa-user-plus"></i>
               Admission
             </Link>
-
           </div>
-
 
           {/* MOBILE BUTTON */}
 
@@ -497,49 +406,29 @@ function Navbar() {
           >
             <i className="fa-solid fa-bars"></i>
           </button>
-
         </div>
-
       </header>
-
 
       {/* OVERLAY */}
 
       <div
-        className={`menu-overlay ${
-          mobileMenuOpen ? "active" : ""
-        }`}
+        className={`menu-overlay ${mobileMenuOpen ? "active" : ""}`}
         onClick={closeMobileMenu}
       ></div>
 
-
       {/* MOBILE MENU */}
 
-      <aside
-        className={`mobile-menu ${
-          mobileMenuOpen ? "active" : ""
-        }`}
-      >
-
+      <aside className={`mobile-menu ${mobileMenuOpen ? "active" : ""}`}>
         {/* MOBILE HEADER */}
 
         <div className="mobile-header">
-
-          <Link
-            to="/"
-            className="mobile-brand"
-            onClick={closeMobileMenu}
-          >
-
+          <Link to="/" className="mobile-brand" onClick={closeMobileMenu}>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/School.svg/512px-School.svg.png"
               alt="ABC School Logo"
             />
 
-            <strong>
-              ABC School
-            </strong>
-
+            <strong>ABC School</strong>
           </Link>
 
           <button
@@ -549,30 +438,19 @@ function Navbar() {
           >
             <i className="fa-solid fa-xmark"></i>
           </button>
-
         </div>
-
 
         {/* MOBILE NAV */}
 
         <nav>
-
           <ul className="mobile-nav">
-
             {/* HOME */}
 
             <li>
-
-              <Link
-                to="/"
-                className="mobile-link"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/" className="mobile-link" onClick={closeMobileMenu}>
                 Home
               </Link>
-
             </li>
-
 
             {/* ABOUT */}
 
@@ -585,7 +463,6 @@ function Navbar() {
               closeMobileMenu={closeMobileMenu}
             />
 
-
             {/* ADMINISTRATION */}
 
             <MobileDropdown
@@ -597,11 +474,9 @@ function Navbar() {
               closeMobileMenu={closeMobileMenu}
             />
 
-
             {/* TEACHERS */}
 
             <li>
-
               <Link
                 to="/teachers"
                 className="mobile-link"
@@ -609,9 +484,7 @@ function Navbar() {
               >
                 Teachers
               </Link>
-
             </li>
-
 
             {/* STUDENTS */}
 
@@ -624,7 +497,6 @@ function Navbar() {
               closeMobileMenu={closeMobileMenu}
             />
 
-
             {/* ACADEMIC */}
 
             <MobileDropdown
@@ -636,11 +508,9 @@ function Navbar() {
               closeMobileMenu={closeMobileMenu}
             />
 
-
             {/* NOTICE */}
 
             <li>
-
               <Link
                 to="/notice"
                 className="mobile-link"
@@ -648,14 +518,11 @@ function Navbar() {
               >
                 Notice
               </Link>
-
             </li>
-
 
             {/* EVENTS */}
 
             <li>
-
               <Link
                 to="/events"
                 className="mobile-link"
@@ -663,9 +530,7 @@ function Navbar() {
               >
                 Events
               </Link>
-
             </li>
-
 
             {/* GALLERY */}
 
@@ -678,11 +543,9 @@ function Navbar() {
               closeMobileMenu={closeMobileMenu}
             />
 
-
             {/* ACHIEVEMENTS */}
 
             <li>
-
               <Link
                 to="/achievements"
                 className="mobile-link"
@@ -690,14 +553,11 @@ function Navbar() {
               >
                 Achievements
               </Link>
-
             </li>
-
 
             {/* ALUMNI */}
 
             <li>
-
               <Link
                 to="/alumni"
                 className="mobile-link"
@@ -705,14 +565,11 @@ function Navbar() {
               >
                 Alumni
               </Link>
-
             </li>
-
 
             {/* CONTACT */}
 
             <li>
-
               <Link
                 to="/contact"
                 className="mobile-link"
@@ -720,18 +577,13 @@ function Navbar() {
               >
                 Contact
               </Link>
-
             </li>
-
           </ul>
-
         </nav>
 
-
-                {/* MOBILE STUDENT LOGIN + ADMISSION */}
+        {/* MOBILE STUDENT LOGIN + ADMISSION */}
 
         <div className="mobile-cta-group">
-
           <Link
             to="/student-login"
             className="cta-btn-outline mobile-cta"
@@ -749,14 +601,11 @@ function Navbar() {
             <i className="fa-solid fa-user-plus"></i>
             Admission
           </Link>
-
         </div>
-
       </aside>
     </>
   );
 }
-
 
 /* MOBILE DROPDOWN COMPONENT */
 
@@ -772,53 +621,32 @@ function MobileDropdown({
 
   return (
     <li>
-
       <button
         type="button"
         className="mobile-link mobile-dropdown-toggle"
         onClick={() => toggleDropdown(name)}
         aria-expanded={isOpen}
       >
-
-        <span>
-          {title}
-        </span>
+        <span>{title}</span>
 
         <i
           className="fa-solid fa-chevron-down"
           style={{
-            transform: isOpen
-              ? "rotate(180deg)"
-              : "rotate(0deg)",
+            transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
             transition: "transform 0.2s ease",
           }}
         ></i>
-
       </button>
 
-
-      <div
-        className={`mobile-dropdown ${
-          isOpen ? "show" : ""
-        }`}
-      >
-
+      <div className={`mobile-dropdown ${isOpen ? "show" : ""}`}>
         {items.map((item) => (
-          <Link
-            to={item.path}
-            key={item.title}
-            onClick={closeMobileMenu}
-          >
-            <i
-              className={`fa-solid ${item.icon}`}
-            ></i>
+          <Link to={item.path} key={item.title} onClick={closeMobileMenu}>
+            <i className={`fa-solid ${item.icon}`}></i>
 
             {item.title}
           </Link>
         ))}
-
       </div>
-
     </li>
   );
 }
