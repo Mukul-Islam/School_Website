@@ -1,86 +1,117 @@
+import { Link } from "react-router-dom";
 
 import "./Achievements.css";
 
-function Achievement() {
-  const achievements = [
-    {
-      icon: "fa-solid fa-graduation-cap",
-      title: "Academic Excellence",
-      description:
-        "Our students continue to achieve excellent results through dedication, hard work and quality education.",
-    },
-    {
-      icon: "fa-solid fa-trophy",
-      title: "Sports Achievement",
-      description:
-        "Students have demonstrated outstanding talent and sportsmanship in various competitions.",
-    },
-    {
-      icon: "fa-solid fa-palette",
-      title: "Creative Talent",
-      description:
-        "Our students actively participate and succeed in art, culture and other creative activities.",
-    },
-    {
-      icon: "fa-solid fa-award",
-      title: "Awards & Recognition",
-      description:
-        "We proudly celebrate students who receive awards, scholarships and recognition for their achievements.",
-    },
-  ];
+import achievements from "./AchievementData";
+
+
+function Achievements() {
 
   return (
-    <section className="achievement-section" id="achievement">
+    <section className="achievement-section achievements-page">
+
       <div className="achievement-container">
 
+        {/* Page Heading */}
         <div className="achievement-heading">
-          <span className="achievement-subtitle">OUR SUCCESS</span>
+
+          <span className="achievement-subtitle">
+            OUR SUCCESS
+          </span>
 
           <h2>
-            Celebrating Our Students'
+            Student
             <span> Achievements</span>
           </h2>
 
           <p>
-            We believe every achievement is a reflection of dedication,
-            talent and hard work. At ABC School, we celebrate the success
-            of every student.
+            Discover the achievements, talents and success stories
+            of the students of ABC School. We are proud to celebrate
+            every achievement and encourage our students to reach
+            their full potential.
           </p>
+
         </div>
 
-        <div className="achievement-grid">
-          {achievements.map((achievement, index) => (
-            <div className="achievement-card" key={index}>
 
-              <div className="achievement-icon">
-                <i className={achievement.icon}></i>
+        {/* All Achievements */}
+        <div className="achievement-grid">
+
+          {achievements.map((achievement) => (
+
+            <div
+              className="achievement-card"
+              key={achievement.id}
+            >
+
+              {/* Image */}
+              <div className="achievement-image">
+
+                <img
+                  src={achievement.image}
+                  alt={achievement.title}
+                />
+
+                <div className="achievement-icon">
+                  <i className={achievement.icon}></i>
+                </div>
+
               </div>
 
+
+              {/* Content */}
               <div className="achievement-content">
-                <h3>{achievement.title}</h3>
 
-                <p>{achievement.description}</p>
+                <span className="achievement-category">
+                  {achievement.category}
+                </span>
 
-                <a href="#achievements">
-                  Learn More
-                  <i className="fa-solid fa-arrow-right"></i>
-                </a>
+                <h3>
+                  {achievement.title}
+                </h3>
+
+                <p>
+                  {achievement.description}
+                </p>
+
+                <div className="achievement-meta">
+                  <span>
+                    {achievement.year}
+                  </span>
+
+                  <span>
+                    ABC School
+                  </span>
+                </div>
+
               </div>
 
             </div>
+
           ))}
+
         </div>
 
+
+        {/* Back Home */}
         <div className="achievement-button-wrapper">
-          <a href="#achievements" className="achievement-button">
-            View All Achievements
-            <i className="fa-solid fa-arrow-right"></i>
-          </a>
+
+          <Link
+            to="/"
+            className="achievement-button"
+          >
+            <i className="fa-solid fa-arrow-left"></i>
+
+            Back to Home
+
+          </Link>
+
         </div>
 
       </div>
+
     </section>
   );
 }
 
-export default Achievement;
+export default Achievements;

@@ -1,4 +1,17 @@
 import "./Footer.css";
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+import { FaAngleRight } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -34,167 +47,182 @@ function Footer() {
             </p>
 
             <div className="footer-social">
-              <a href="#" aria-label="Facebook">
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
 
-              <a href="#" aria-label="YouTube">
-                <i className="fa-brands fa-youtube"></i>
-              </a>
+  <a
+    href="https://www.facebook.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FaFacebookF />
+  </a>
 
-              <a href="#" aria-label="Instagram">
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-            </div>
+  <a
+    href="https://www.youtube.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="YouTube"
+  >
+    <FaYoutube />
+  </a>
+
+  <a
+    href="https://www.instagram.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
+
+</div>
 
           </div>
 
 
           {/* Quick Links */}
-          <div className="footer-column">
 
-            <h3>Quick Links</h3>
+<div className="footer-column">
 
-            <ul className="footer-links">
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Home
-                </a>
-              </li>
+  <h3>Quick Links</h3>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  About School
-                </a>
-              </li>
+  <ul className="footer-links">
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Teachers
-                </a>
-              </li>
+    <li>
+      <Link to="/">
+        <FaAngleRight />
+        Home
+      </Link>
+    </li>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Notice
-                </a>
-              </li>
+    <li>
+      <Link to="/about-school">
+        <FaAngleRight />
+        About School
+      </Link>
+    </li>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Events
-                </a>
-              </li>
+    <li>
+      <Link to="/teachers">
+        <FaAngleRight />
+        Teachers
+      </Link>
+    </li>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Contact
-                </a>
-              </li>
-            </ul>
+    <li>
+      <Link to="/notice">
+        <FaAngleRight />
+        Notice
+      </Link>
+    </li>
 
-          </div>
+    <li>
+      <Link to="/events">
+        <FaAngleRight />
+        Events
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/contact">
+        <FaAngleRight />
+        Contact
+      </Link>
+    </li>
+
+  </ul>
+
+</div>
 
 
           {/* Important Links */}
-          <div className="footer-column">
 
-            <h3>Important Links</h3>
+<div className="footer-column">
 
-            <ul className="footer-links">
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Academic Programs
-                </a>
-              </li>
+  <h3>Important Links</h3>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Academic Calendar
-                </a>
-              </li>
+  <ul className="footer-links">
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Examination
-                </a>
-              </li>
+    <li>
+      <Link to="/academic-programs">
+        <FaAngleRight />
+        Academic Programs
+      </Link>
+    </li>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Results
-                </a>
-              </li>
+    <li>
+      <Link to="/academic-calendar">
+        <FaAngleRight />
+        Academic Calendar
+      </Link>
+    </li>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Student Services
-                </a>
-              </li>
+    <li>
+      <Link to="/examination">
+        <FaAngleRight />
+        Examination
+      </Link>
+    </li>
 
-              <li>
-                <a href="#">
-                  <i className="fa-solid fa-angle-right"></i>
-                  Gallery
-                </a>
-              </li>
-            </ul>
+    <li>
+      <Link to="/results">
+        <FaAngleRight />
+        Results
+      </Link>
+    </li>
 
-          </div>
+    <li>
+      <Link to="/student-services">
+        <FaAngleRight />
+        Student Services
+      </Link>
+    </li>
 
+    <li>
+      <Link to="/photo-gallery">
+        <FaAngleRight />
+        Gallery
+      </Link>
+    </li>
+
+  </ul>
+
+</div>
 
           {/* Contact */}
-          <div className="footer-column footer-contact">
+<div className="footer-column footer-contact">
+  <h3>Contact Us</h3>
 
-            <h3>Contact Us</h3>
+  <div className="contact-item">
+    <div className="contact-icon">
+      <FaMapMarkerAlt />
+    </div>
+    <div>
+      <span>Address</span>
+      <p>School Road, Bangladesh</p>
+    </div>
+  </div>
 
-            <div className="contact-item">
-              <div className="contact-icon">
-                <i className="fa-solid fa-location-dot"></i>
-              </div>
+  <div className="contact-item">
+    <div className="contact-icon">
+      <FaPhone />
+    </div>
+    <div>
+      <span>Phone</span>
+      <p>+880 1XXX-XXXXXX</p>
+    </div>
+  </div>
 
-              <div>
-                <span>Address</span>
-                <p>School Road, Bangladesh</p>
-              </div>
-            </div>
-
-
-            <div className="contact-item">
-              <div className="contact-icon">
-                <i className="fa-solid fa-phone"></i>
-              </div>
-
-              <div>
-                <span>Phone</span>
-                <p>+880 1XXX-XXXXXX</p>
-              </div>
-            </div>
-
-
-            <div className="contact-item">
-              <div className="contact-icon">
-                <i className="fa-solid fa-envelope"></i>
-              </div>
-
-              <div>
-                <span>Email</span>
-                <p>info@school.edu.bd</p>
-              </div>
-            </div>
-
-          </div>
+  <div className="contact-item">
+    <div className="contact-icon">
+      <FaEnvelope />
+    </div>
+    <div>
+      <span>Email</span>
+      <p>info@school.edu.bd</p>
+    </div>
+  </div>
+</div>
 
         </div>
       </div>

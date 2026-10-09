@@ -10,7 +10,7 @@ import Notices from "../components/Notice/Notices";
 import Home_Notice from "../components/Notice/Home_Notice";
 
 import About from "../components/About/About";
-import Achievements from "../components/Achievements/Achievements";
+
 
 import Contact from "../components/Contact/Contact";
 import Teachers from "../components/Teachers/Teachers";
@@ -49,6 +49,10 @@ import StudentResult from "../components/StudentResult/StudentResult";
 import StudentPayment from "../components/StudentPayment/StudentPayment";
 import StudentAttendance from "../components/StudentAttendance/StudentAttendance";
 import StudentIdCard from "../components/StudentIdCard/StudentIdCard";
+import Achievement from "../components/Achievements/Achievement";
+import Achievements from "../components/Achievements/Achievements";
+
+import ScrollToTop from "../ScrollTop/ScrollToTop";
 
 
 function Home() {
@@ -60,7 +64,7 @@ function Home() {
 
       <About />
 
-      <Achievements />
+      <Achievement />
     </>
   );
 }
@@ -68,6 +72,8 @@ function Home() {
 
 function AppRouter() {
   return (
+   <>
+    <ScrollToTop/>
     <Routes>
 
       {/* =====================================
@@ -267,6 +273,7 @@ function AppRouter() {
       </Route>
 
     </Routes>
+    </>
   );
 }
 
