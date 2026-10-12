@@ -28,7 +28,7 @@ function Founder() {
 
             <div className="founder-image-frame">
               <img
-                src="/founder.jpg"
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=85"
                 alt="Founder of ABC School"
               />
             </div>

@@ -4,7 +4,6 @@ function HeadTeacher() {
   return (
     <section className="head-teacher-section">
       <div className="head-teacher-container">
-
         <div className="head-teacher-header">
           <span>SCHOOL LEADERSHIP</span>
 
@@ -13,18 +12,16 @@ function HeadTeacher() {
           </h1>
 
           <p>
-            Leading with vision, responsibility and a commitment to
-            quality education.
+            Leading with vision, responsibility and a commitment to quality
+            education.
           </p>
         </div>
 
         <div className="head-teacher-profile">
-
           <div className="head-teacher-image-area">
-
             <div className="head-teacher-image">
               <img
-                src="/head-teacher.jpg"
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=85"
                 alt="Head Teacher of ABC School"
               />
             </div>
@@ -34,12 +31,9 @@ function HeadTeacher() {
               <h3>Head Teacher</h3>
               <p>ABC School</p>
             </div>
-
           </div>
 
-
           <div className="head-teacher-message">
-
             <span className="head-teacher-label">
               MESSAGE FROM THE HEAD TEACHER
             </span>
@@ -51,30 +45,29 @@ function HeadTeacher() {
             </h2>
 
             <p>
-              Welcome to ABC School. We believe that education is one of
-              the most powerful ways to shape the future of a child and
-              contribute positively to society.
+              Welcome to ABC School. We believe that education is one of the
+              most powerful ways to shape the future of a child and contribute
+              positively to society.
             </p>
 
             <p>
-              Our responsibility is not limited to helping students achieve
-              good academic results. We strive to create an environment
-              where every student can develop confidence, discipline,
-              creativity and a strong sense of responsibility.
+              Our responsibility is not limited to helping students achieve good
+              academic results. We strive to create an environment where every
+              student can develop confidence, discipline, creativity and a
+              strong sense of responsibility.
             </p>
 
             <p>
               Our teachers work with dedication to understand the individual
               needs of students and encourage them to discover their own
-              abilities. We believe that when students receive proper
-              guidance and support, they can achieve much more than they
-              imagine.
+              abilities. We believe that when students receive proper guidance
+              and support, they can achieve much more than they imagine.
             </p>
 
             <p>
-              I sincerely hope that ABC School will continue to be a place
-              where students learn with curiosity, grow with confidence and
-              move forward with strong values.
+              I sincerely hope that ABC School will continue to be a place where
+              students learn with curiosity, grow with confidence and move
+              forward with strong values.
             </p>
 
             <div className="head-teacher-signature">
@@ -82,30 +75,22 @@ function HeadTeacher() {
               <strong>Head Teacher</strong>
               <small>ABC School</small>
             </div>
-
           </div>
-
         </div>
 
-
         <div className="leadership-section">
-
           <div className="leadership-heading">
             <span>OUR LEADERSHIP APPROACH</span>
 
-            <h2>
-              Leading Students Towards Excellence
-            </h2>
+            <h2>Leading Students Towards Excellence</h2>
 
             <p>
-              Our school leadership focuses on creating a positive,
-              disciplined and supportive environment for every student.
+              Our school leadership focuses on creating a positive, disciplined
+              and supportive environment for every student.
             </p>
           </div>
 
-
           <div className="leadership-grid">
-
             <div className="leadership-item">
               <div className="leadership-icon">
                 <i className="fa-solid fa-graduation-cap"></i>
@@ -114,11 +99,10 @@ function HeadTeacher() {
               <h3>Academic Excellence</h3>
 
               <p>
-                Encouraging students to develop strong academic foundations
-                and a lifelong interest in learning.
+                Encouraging students to develop strong academic foundations and
+                a lifelong interest in learning.
               </p>
             </div>
-
 
             <div className="leadership-item">
               <div className="leadership-icon">
@@ -133,7 +117,6 @@ function HeadTeacher() {
               </p>
             </div>
 
-
             <div className="leadership-item">
               <div className="leadership-icon">
                 <i className="fa-solid fa-compass"></i>
@@ -146,14 +129,10 @@ function HeadTeacher() {
                 leadership qualities needed for the future.
               </p>
             </div>
-
           </div>
-
         </div>
 
-
         <div className="head-teacher-closing">
-
           <div className="closing-icon">
             <i className="fa-solid fa-quote-left"></i>
           </div>
@@ -164,13 +143,9 @@ function HeadTeacher() {
               meaningful difference in the world.
             </p>
 
-            <span>
-              — ABC School
-            </span>
+            <span>— ABC School</span>
           </div>
-
         </div>
-
       </div>
     </section>
   );
