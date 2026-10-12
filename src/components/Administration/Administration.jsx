@@ -7,7 +7,7 @@ import {
   FaUserGraduate,
   FaClipboardList,
   FaPhoneAlt,
-  FaEnvelope,
+  
   FaArrowRight,
   FaUsers,
 } from "react-icons/fa";

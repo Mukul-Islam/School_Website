@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
+import schoolLogo from "../../images/ABC_School.png";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -208,29 +209,29 @@ function Navbar() {
           {/* BRAND */}
 
           <Link
-  to="/"
-  className="flex items-center gap-3 shrink-0 whitespace-nowrap"
->
-  {/* Logo */}
-  <div className="w-14 h-14 rounded-full overflow-hidden shrink-0">
-    <img
-      src="/src/images/ABC_School.png"
-      alt="ABC School Logo"
-      className="w-full h-full object-cover"
-    />
-  </div>
+            to="/"
+            className="flex items-center gap-3 shrink-0 whitespace-nowrap"
+          >
+            {/* Logo */}
 
-  {/* School Info */}
-  <div className="flex flex-col">
-    <h1 className="m-0 text-xl font-bold leading-tight text-[var(--primary)]">
-      ABC School
-    </h1>
+            <div className="w-14 h-14 rounded-full overflow-hidden shrink-0">
+              <img
+                src={schoolLogo}
+                alt="ABC School Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* School Info */}
+            <div className="flex flex-col">
+              <h1 className="m-0 text-xl font-bold leading-tight text-[var(--primary)]">
+                ABC School
+              </h1>
 
-    <span className="mt-1 text-[10px] tracking-[0.7px] uppercase text-[var(--muted)]">
-      Knowledge • Character • Excellence
-    </span>
-  </div>
-</Link>
+              <span className="mt-1 text-[10px] tracking-[0.7px] uppercase text-[var(--muted)]">
+                Knowledge • Character • Excellence
+              </span>
+            </div>
+          </Link>
 
           {/* DESKTOP NAV */}
 

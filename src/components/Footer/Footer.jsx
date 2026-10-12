@@ -12,6 +12,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import schoolLogo from "../../images/ABC_School.png";
 
 function Footer() {
   return (
@@ -29,9 +30,12 @@ function Footer() {
 
             <div className="footer-brand">
               <img
-                src="src\images\ABC_School.png"
-                alt="ABC School"
-              />
+    src={schoolLogo}
+    alt="ABC School Logo"
+    className="w-full h-full object-cover"
+  />
+              
+
 
               <div>
                 <h2>ABC School</h2>

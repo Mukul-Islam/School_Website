@@ -9,11 +9,8 @@ import {
   FaPhoneAlt,
   FaBookOpen,
   FaAward,
-  FaChalkboardTeacher,
-  FaLaptopCode,
-  FaFutbol,
-  FaFlask,
-  FaUserTie,
+  FaChalkboardTeacher
+  
 } from "react-icons/fa";
 
 import "./Teachers.css";
