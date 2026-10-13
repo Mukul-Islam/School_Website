@@ -224,7 +224,7 @@ function Contact() {
                 <div className="form-group">
                   <label htmlFor="contact-message">Your Message</label>
 
-                  <div className="textarea-wrapper">
+                  <div className="textarea-wrappert">
                     
 
                     <textarea
