@@ -10,7 +10,6 @@ import {
   FaEnvelope,
   FaTimes,
   FaArrowRight,
-  FaLinkedinIn,
   FaGlobe,
   FaHandshake,
 } from "react-icons/fa";

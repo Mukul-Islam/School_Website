@@ -8,9 +8,6 @@ import {
   FaFacebookF,
   FaYoutube,
   FaInstagram,
-  FaUser,
-  FaPenToSquare,
-  FaMessage,
   FaArrowRight,
   FaLocationArrow,
   FaMapLocationDot,
@@ -224,7 +221,7 @@ function Contact() {
                 <div className="form-group">
                   <label htmlFor="contact-message">Your Message</label>
 
-                  <div className="textarea-wrappert">
+                  <div className="textarea-wrapper">
                     
 
                     <textarea
