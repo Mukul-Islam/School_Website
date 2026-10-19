@@ -88,7 +88,7 @@ function Notice() {
             <div>
 
               <span>
-                ABC SCHOOL NOTICE
+                ABC SCHOOL NOTIC
               </span>
 
               <h1>
